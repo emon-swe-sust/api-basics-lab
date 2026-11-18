@@ -16,7 +16,7 @@ class JsonTest {
 
     @Test
     void stringFieldReadsValue() {
-        String body = "{\"ucid\":\"10000001\",\"room\":\"MS-105\"}";
+        String body = "{\"ucid\":\"10000001\",\"room\":\"MS-101\"}";
 
         assertThat(Json.stringField(body, "room")).isEqualTo("MS-101");
     }
