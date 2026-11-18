@@ -11,7 +11,7 @@ class RoomServiceTest {
         Booking b = new RoomService().reserve("10000001", "MS-101");
 
         assertThat(b.room).isEqualTo("MS-101");
-        assertThat(b.status).isEqualTo("confi");
+        assertThat(b.status).isEqualTo("confirmed");
     }
 
     @Test
